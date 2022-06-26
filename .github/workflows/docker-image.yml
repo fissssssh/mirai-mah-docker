@@ -15,5 +15,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Prepare
+      run: ./build.sh
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag mirai-mah:$(date +%s)
