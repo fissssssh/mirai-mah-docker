@@ -5,5 +5,5 @@ latest_download_url=""$(curl -s https://api.github.com/repos/iTXTech/mirai-conso
 wget -O mcl.zip $latest_download_url
 mkdir mcl
 unzip -d mcl mcl.zip
-docker build -t mirai-mah-docker:$TAG .
+docker build -t fissssssh/mirai-mah-docker:$TAG .
 docker push fissssssh/mirai-mah-docker:$TAG
